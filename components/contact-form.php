@@ -531,7 +531,7 @@ m-1678 -207 c12 -22 -5 -56 -73 -141 -343 -436 -612 -942 -756 -1422 -53 -177
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a question? Want to talk to me? leave a message down below!</p>
-            <form action="index.php" method="POST" class="space-y-8">
+            <form action="index.php" method="POST" class="space-y-8" enctype="multipart/form-data">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
                     <input name="email" type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" >
@@ -543,6 +543,10 @@ m-1678 -207 c12 -22 -5 -56 -73 -141 -343 -436 -612 -942 -756 -1422 -53 -177
                 <div class="sm:col-span-2">
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                     <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <div>
+                    <label for="file_upload" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Upload File or Image</label>
+                    <input type="file" name="file_upload" id="file_upload">
                 </div>
                 <button name="contact" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                 <p class="text-red-500 text-center"><?= $erreur?></p>
