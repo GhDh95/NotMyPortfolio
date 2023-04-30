@@ -1,4 +1,4 @@
-<nav class="flex items-center border-b border-gray-300 sticky top-0 z-50 bg-white">
+<nav class="py-2 flex flex-col md:flex md:flex-row items-center border-b border-gray-300 md:sticky md:top-0 z-50 bg-white">
     <div class="relative">
         <svg class=""
              xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -67,26 +67,27 @@
             </g>
         </svg>
 
-    <a href="index.php" class=" absolute inset-0 top-5 text-2xl">Ghada Dhaoui
+    <a href="/portfolio/" class=" absolute inset-0 top-5 text-2xl">Ghada Dhaoui
 
     </a>
 
     </div>
 
 
-    <div class="flex ml-auto space-x-4">
-        <p class="hover:bg-gray-200 rounded px-2 py-1">Education</p>
-        <p class="hover:bg-gray-200 rounded px-2 py-1">Experience</p>
-        <p class="hover:bg-gray-200 rounded px-2 py-1">Contact</p>
+    <div class="flex flex-wrap ml-auto space-x-4">
+        <a href="/portfolio/#education" class="hover:bg-gray-200 rounded px-2 py-1">Education</a>
+        <a href="/portfolio/#competences" class="hover:bg-gray-200 rounded px-2 py-1">Competences</a>
+        <a href="/portfolio/#experience" class="hover:bg-gray-200 rounded px-2 py-1">Experience</a>
+        <a href="/portfolio/#contact" class="hover:bg-gray-200 rounded px-2 py-1">Contact</a>
         <?php if(isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 1): ?>
             <a href="messages.php" class="hover:bg-gray-200 rounded px-2 py-1">Messages</a>
         <?php endif; ?>
         <?php if(isset($_SESSION['user'])): ?>
             <form class="" action="index.php" method="post">
-            <button type="submit" name="logout" class="bg-primary text-white hover:opacity-75 rounded px-2 py-1">Logout</button>
+            <button type="submit" name="logout" class=" bg-primary text-white hover:opacity-75 rounded px-2 py-1">Logout</button>
             </form>
         <?php else: ?>
-            <a href="login.php" class="bg-primary text-white hover:opacity-75 rounded px-2 py-1">Login</a>
+            <a href="login.php" class=" bg-primary text-white hover:opacity-75 rounded px-2 py-1">Login</a>
         <?php endif; ?>
     </div>
 

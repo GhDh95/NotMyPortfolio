@@ -1,4 +1,4 @@
-<div class="relative">
+<div id="contact" class="relative">
     <svg style="animation-duration: 5s;" class="absolute animate-spin" version="1.0" xmlns="http://www.w3.org/2000/svg"
          width="75pt" height="75pt" viewBox="0 0 1280.000000 1235.000000"
          preserveAspectRatio="xMidYMid meet">

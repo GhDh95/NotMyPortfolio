@@ -1,4 +1,4 @@
-<div class="w-2/3 mx-auto border border-black mt-20">
+<div id="competences" class="w-2/3 mx-auto border border-black mt-20">
 
     <p class="text-center bg-primary text-xl font-semibold text-white mb-2 py-2">Competences</p>
 
@@ -47,7 +47,7 @@
                 <img class="w-16 h-16 rounded-full" src="public/5952796-middle.png" alt="">
                 <p class="text-gray-600 underline">Certifications</p>
             </div>
-            <ul class="list-disc">
+            <ul class="list-disc w-2/3 md:w-full md:pl-20">
                 <li>
                     <a class="hover:underline" href="storage/introduction-to-data-analytics-1.pdf" download>Introduction to Data analytics Certification</a>
                 </li>

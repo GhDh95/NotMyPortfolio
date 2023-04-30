@@ -22,7 +22,7 @@
                         tertiary: '#F1F1F1',
                         fourth: '#ff926b',
                         fifth:'#ffc65a',
-                        sixth: '#231F20',
+                        sixth: '#A5B4FC',
                     },
                     fontFamily: {
                         Italiano: ['Italiano', 'serif'],

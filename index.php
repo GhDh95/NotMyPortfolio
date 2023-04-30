@@ -68,8 +68,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <?php require('components/main-section.php') ?>
 
+<?php require('components/timeline.php') ?>
 
 <?php require('components/competence.php') ?>
+
+<?php require('components/divider.php') ?>
+
+<?php require('components/experience.php') ?>
+
 
 <?php require('components/divider.php') ?>
 
