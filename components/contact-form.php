@@ -548,7 +548,7 @@ m-1678 -207 c12 -22 -5 -56 -73 -141 -343 -436 -612 -942 -756 -1422 -53 -177
                     <label for="file_upload" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Upload File or Image</label>
                     <input type="file" name="file_upload" id="file_upload">
                 </div>
-                <button name="contact" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                <button name="contact" type="submit" class="hover:opacity-75 py-3 px-5 text-sm font-medium text-center text-white bg-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                 <p class="text-red-500 text-center"><?= $erreur?></p>
             </form>
         </div>
